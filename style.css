@@ -175,12 +175,80 @@ header {
     100% { transform: translateX(-100%); }
 }
 #info,
+#about,
 #services,
 #projects {
     height: 100vh;
     padding: 2rem;
 }
-/* Section Title */
+
+.container-about {
+    width: 100%;
+    display: flex;
+    background: var(--bg-color);
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+.left-section {
+    text-align:justify;
+    margin: auto;
+    width: 50%;
+    padding: 20px;
+    
+}
+.about-parag{
+   margin: 50px;
+   font-size: 1.4rem;
+   margin: 1.2rem 0;
+   line-height: 1.4;
+}
+.right-section {
+    width: 50%;
+    padding: 20px;
+}
+h2 {
+    text-align: center;
+}
+.skill {
+    margin: 20px 0;
+}
+.skill-name {
+    font-weight: bold;
+}
+.progress-bar {
+    width: 100%;
+    background: #ddd;
+    height: 10px;
+    border-radius: 5px;
+    overflow: hidden;
+    position: relative;
+}
+.progress {
+    height: 100%;
+    background: var(--main-color);
+    width: 0;
+    border-radius: 5px;
+    animation: growBar 2s ease-in forwards;
+}
+@keyframes growBar {
+    from { width: 0; }
+}
+.html .progress { animation-delay: 0.2s; width: 94%; }
+.css .progress { animation-delay: 0.4s; width: 50%; }
+.javascript .progress { animation-delay: 0.6s; width: 35%; }
+.php .progress { animation-delay: 0.8s; width: 20%; }
+.mysql .progress { animation-delay: 1s; width: 19%; }
+.python .progress { animation-delay: 1s; width: 60%; }
+.java .progress { animation-delay: 1s; width: 40%; }
+
+
+
+
+
+
+
+
 /* Services Container */
 
 @keyframes appear {
@@ -335,11 +403,103 @@ header {
     color: var(--text-color);
 }
 
+/*CONTACT SECTION */
+.container-contact {
+    width: 100%;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 50px 20px;
+   
+    color: white;
+    border-radius: 8px;
+}
+.left-section {
+    width: 45%;
+}
+.left-section h2 {
+    margin-bottom: 10px;
+}
+
+.contact-info {
+    margin: 20px 0;
+}
+.contact-info div {
+    margin-bottom: 15px;
+    display: flex;
+    align-items: center;
+}
+.contact-info div img {
+    width: 24px;
+    margin-right: 10px;
+}
+.right-section {
+    width: 50%;
+    background: var(--bg-color);
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    color: var(--text-color);
+    text-align: center;
+   
+    border-radius: 15px;
+    box-shadow: 0 0 20px rgba(0, 238, 255, 0.4);
+    transition: transform 0.3s ease;
+}
+.right-section:hover {
+    transform: scale(1.05);
+}
+.right-section h2 {
+    text-align: center;
+}
+.form-group {
+    margin-bottom: 15px;
+}
+.form-group input, .form-group textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+}
+.form-group textarea {
+    height: 100px;
+}
+.send-btn {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    background: var(--main-color);
+    color: var(--second-bg-color);
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 18px;
+}
+.send-btn:hover {
+    background: var(--second-bg-color);
+    color: var(--text-color);
+}
 
 
+@media (max-width: 768px) {
+    .container {
+        flex-direction: column;
+        text-align: center;
+    }
+    .left-section, .right-section {
+        width: 100%;
+    }
+}
 
 
-
+footer {
+    background: rgba(0, 0, 0, 0.3);
+    padding: 20px;
+    text-align: center;
+    color: #fff;
+}
 
 
 
