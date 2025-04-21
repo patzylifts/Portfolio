@@ -4,25 +4,28 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portfolio</title>
-    <link rel="stylesheet" href="style.css">
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
     
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
     <header class="header">
-        <a href="#" class="logo">Patrick <span>Ticoy</span></a>       
+        <a href="#" class="logo">Patrick <span>Ticoy</span></a>
+        <div class="menu-icon">
+            <i class='bx bx-menu'></i>
+        </div>       
         <nav class="navbar">
             <a href="#" class="active">Home</a>
             <a href="#about">About</a>
             <a href="#services">Services</a>
             <a href="#projects">Projects</a>
-            <a href="#">Contact</a>
+            <a href="#contact">Contact</a>
         </nav>
     </header>
 
@@ -38,10 +41,10 @@
      
                     <!-- Social Media Icons -->
                     <div class="social-icons">
-                        <a href="#" target="_blank"><i class='bx bxl-facebook-circle'></i></a>    
-                        <a href="#" target="_blank"><i class='bx bxl-instagram'></i></a>
-                        <a href="#" target="_blank"><i class='bx bxl-linkedin-square'></i></a>
-                        <a href="#" target="_blank"><i class='bx bxl-github'></i></a>
+                        <a href="https://www.facebook.com/" target="https://www.facebook.com/"><i class='bx bxl-facebook-circle'></i></a>    
+                        <a href="https://www.instagram.com/?hl=en" target="https://www.instagram.com/?hl=en"><i class='bx bxl-instagram'></i></a>
+                        <a href="https://www.linkedin.com/" target="https://www.linkedin.com/"><i class='bx bxl-linkedin-square'></i></a>
+                        <a href="https://github.com/patzylifts" target="https://github.com/patzylifts"><i class='bx bxl-github'></i></a>
                     </div>
                 </div>
 
@@ -54,12 +57,11 @@
     </section>
 
     <section id="about">
-        <h2 class="section-title">About</h2>
+        <h2 class="section-title">About <span>Me</span></h2>
         <div class="container-about">
             <div class="left-section">
-                <h2>My creative skills & experiences.</h2>
+                <h2>My Creative Skills & Experiences</h2>
                 <p class="about-parag">I am currently studying at Cavite State University - Bacoor Campus. I have a strong passion for creating websites and developing engaging web experiences. I enjoy learning new technologies and staying up to date with the latest trends in web development. My goal is to build responsive and visually appealing websites that provide a great user experience. In my free time, I explore different coding techniques and work on personal projects to enhance my skills.</p>
-                
             </div>
             <div class="right-section">
                 <h2>My Skills</h2>
@@ -110,12 +112,11 @@
     </section>
 
     <section id="services">
-        <h2 class="section-title">Services</h2>
+        <h2 class="section-title">My <span>Services</span></h2>
         <div class="services-container">
-            
             <div class="service-box">
                 <h3>UI Design</h3>
-                <p>Creating modern and responsive website designs. My goal is to enhance user engagement and satisfaction through thoughtful and innovative design</p>
+                <p>Creating modern and responsive website designs. My goal is to enhance user engagement and satisfaction through thoughtful and innovative design approaches that consider both aesthetics and usability.</p>
             </div>
             <div class="service-box">
                 <h3>Frontend Development</h3>
@@ -123,11 +124,11 @@
             </div>
             <div class="service-box">
                 <h3>Backend Development</h3>
-                <p>Focus on building the server-side components of a web application. This includes creating and managing databases, server logic, and APIs that support the frontend and handle user requests. I use frameworks like Django to build fast and scalable systems that ensure efficient data processing and secure user interactions.</p>
+                <p>Focus on building the server-side components of a web application. This includes creating and managing databases, server logic, and APIs that support the frontend and handle user requests. I use frameworks like Django to build fast and scalable systems.</p>
             </div>
             <div class="service-box">
                 <h3>Testing</h3>
-                <p>Conduct various types of tests to ensure that the visual and interactive parts of the website I create function smoothly. My goal is to deliver a polished and high-quality product that meets the user's expectations and enhances their interaction with the website.</p>
+                <p>Conduct various types of tests to ensure that the visual and interactive parts of the website I create function smoothly. My goal is to deliver a polished and high-quality product that meets the user's expectations.</p>
             </div>
         </div>
     </section>
@@ -135,10 +136,9 @@
     <section id="projects">
         <h2 class="section-title">Recent <span>Projects</span></h2>
         <div class="projects-container">
-            
             <!-- Project 1 -->
             <div class="project-card">
-                <img src="images/project1.jpg" alt="Coffee Website">
+                <img src="images/project1.jpg" alt="Fitness Web Application">
                 <div class="card-content">
                     <h3>Fitness Web Application</h3>
                     <p class="info-proj">This project is a comprehensive fitness web application designed to help users achieve their health goals. It features personalized workout plans, nutrition tracking, and progress monitoring.</p>
@@ -146,11 +146,10 @@
                         <i class='bx bxl-django'></i>
                         <i class="fa fa-database" aria-hidden="true"></i>
                         <i class='bx bxl-css3'></i>
-                        <i class='bx bxl-html5' ></i>
-                        <i class='bx bxl-bootstrap' ></i>
-                       
+                        <i class='bx bxl-html5'></i>
+                        <i class='bx bxl-bootstrap'></i>
                     </div>
-                    <a href="#" class="visit-project"><i class='bx bx-link'></i> Visit Project</a>
+                    <a href="https://github.com/patzylifts/Fitness-WebApp" class="visit-project"><i class='bx bx-link'></i> Visit Project</a>
                 </div>
             </div>
 
@@ -163,66 +162,68 @@
                     <div class="tech-icons">
                         <i class='bx bxl-c-plus-plus'></i>
                         <i class="fa fa-database" aria-hidden="true"></i>
-                        
                     </div>
-                    <a href="#" class="visit-project"><i class='bx bx-link'></i> Visit Project</a>
+                    <a href="https://github.com/patzylifts/C-SQL-Server" class="visit-project"><i class='bx bx-link'></i> Visit Project</a>
                 </div>
             </div>
 
             <!-- Project 3 -->
             <div class="project-card">
-                <img src="images/project3.jpg" alt="">
+                <img src="images/project3.jpg" alt="E-commerce Watch Store">
                 <div class="card-content">
                     <h3>E-commerce Website</h3>
-                    <p class="info-proj">This project is an elegant and user-friendly online store dedicated to showcasing a diverse collection of watches.</p>
+                    <p class="info-proj">This project is an elegant and user-friendly online store dedicated to showcasing a diverse collection of watches with advanced filtering capabilities and secure payment processing.</p>
                     <div class="tech-icons">
-                        <i class='bx bxl-php' ></i>
+                        <i class='bx bxl-php'></i>
                         <i class='bx bxl-html5'></i>
                         <i class='bx bxl-css3'></i>
                         <i class='bx bxl-javascript'></i>                        
                     </div>
-                    <a href="#" class="visit-project"><i class='bx bx-link'></i> Visit Project</a>
+                    <a href="https://github.com/patzylifts/C-SQL-Server" class="visit-project"><i class='bx bx-link'></i> Visit Project</a>
                 </div>
             </div>
 
             <!-- Project 4 -->
             <div class="project-card">
-                <img src="images/project4.jpg" alt="E-commerce App">
+                <img src="images/project4.jpg" alt="Smartphone E-commerce">
                 <div class="card-content">
-                    <h3>E-commerce Website</h3>
+                    <h3>Smartphone Store</h3>
                     <p class="info-proj">This project is a cutting-edge smartphone e-commerce platform designed to provide a seamless shopping experience. Users can compare different smartphone models based on features, specifications, and pricing.</p>
                     <div class="tech-icons">
-                        <i class='bx bxl-php' ></i>
+                        <i class='bx bxl-php'></i>
                         <i class='bx bxl-html5'></i>
                         <i class='bx bxl-css3'></i>
                         <i class='bx bxl-javascript'></i> 
                     </div>
-                    <a href="#" class="visit-project"><i class='bx bx-link'></i> Visit Project</a>
+                    <a href="https://github.com/patzylifts/C-SQL-Server" class="visit-project"><i class='bx bx-link'></i> Visit Project</a>
                 </div>
             </div>
         </div>
     </section>
 
     <section id="contact">
+        <h2 class="section-title">Contact <span>Me</span></h2>
         <div class="container-contact">
             <div class="left-section">
-                <h2>Contact Me</h2>
-                <p class="contact-parag">If you have any questions or would like to collaborate, feel free to reach out.</p>
+                <h2>Get In Touch</h2>
+                <p class="contact-parag">If you have any questions or would like to collaborate on a project, feel free to reach out. I'm always open to discussing new opportunities and ideas.</p>
                 <div class="contact-info">
-                    
                     <div>
-                        <i class='bx bxs-contact'></i>
+                        <i class='bx bxs-phone'></i>
                         <span>+63907-789-1235</span>
                     </div>
                     <div>
-                        <i class='bx bx-envelope' ></i>
+                        <i class='bx bx-envelope'></i>
                         <span>patrickticoy@gmail.com</span>
+                    </div>
+                    <div>
+                        <i class='bx bxs-map'></i>
+                        <span>Bacoor, Cavite, Philippines</span>
                     </div>
                 </div>
             </div>
             <div class="right-section">
                 <h2>Send Message</h2>
-                
                 <form>
                     <div class="form-group">
                         <input type="text" placeholder="Full Name" required>
@@ -233,21 +234,10 @@
                     <div class="form-group">
                         <textarea placeholder="Type your Message..." required></textarea>
                     </div>
-                    <button type="submit" class="send-btn">Send</button>
+                    <button type="submit" class="send-btn">Send Message</button>
                 </form>
             </div>
-                <p></p>
         </div>
-       
-    </section>
+</section>
 
-    <footer>
-        <div>
-            <p>Patrick TIcoy © 2025</p>
-        </div>
-    </footer>
-
-
-    <script src="script.js"></script>
-</body>
-</html>
+<script src="script.js"></script>
